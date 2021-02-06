@@ -1,0 +1,138 @@
+/* Reset browser settings */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* outline: 1px solid pink; */
+}
+
+/* Page styling */
+.wrapper{
+    background-image: linear-gradient(#1C0C10, rgb(88, 64, 88), #1C0C10); 
+    width: 950px;
+}
+
+/* Header styling */
+.header{
+    color: #1C0C10;
+    background-color: rgb(231, 229, 229);
+    padding: 10px 20px;
+}
+
+.header h1, .header h2{
+    display: inline-block;
+}
+
+.header h2{
+    float: right;
+    text-align: center;
+}
+/* End of header styling */
+
+/* Body styling */
+.body{
+    padding: 20px;
+}
+
+/* Top block */
+    .intro, #about{
+        display: inline-block;
+    }
+
+    .intro img{
+        height: 250px;
+    }
+
+    .intro img{
+        border: 5px solid grey;
+        margin-right: 37px;
+    }
+
+        #about{
+            background-image: linear-gradient(90deg, #FEFEFE, #DBCDDA);
+            height: 260px;
+            width: 475px;
+            vertical-align: top;
+        }
+
+        #about h3{
+            background-image: linear-gradient(#B3B3B7, #888694, #B3B3B7);
+            padding: 10px;
+            color: white;
+        }
+        
+        #about p{
+            padding: 10px;
+            font-size: 11pt;
+        }
+
+        #about a{
+            padding-left: 10px;
+            color: black;
+        }
+
+/* Bottom block */
+    #content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .topic{
+        background-image: linear-gradient(90deg, #FEFEFE, #DBCDDA);
+        width: 280px;
+        height: 550px;
+        margin-top: 20px;
+    }
+
+        .topic h3, .topic h4{
+            color: white;
+            background-image: linear-gradient(#B3B3B7, #888694, #B3B3B7);
+            padding: 10px;
+        }
+
+        .topic img{
+            width: 100%;
+        }
+
+        .topic p{
+            margin-bottom: 50px;
+            font-size: 10pt;
+        }
+
+        .topic_badges img{
+            width: 40px;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .topic_badges a{
+            padding: 5px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            width: 50%;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(18, 138, 88);
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+/* End of body styling */
+
+/* Footer styling */
+#footer{
+    background-color: rgb(231, 229, 229);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+    #footer_social_contacts img{
+        margin-top: 10px;
+        width: 20px;
+        display: inline-block;
+    }
+
+    #footer_social_contacts a{
+        color: black;
+        vertical-align: 5px;
+    }

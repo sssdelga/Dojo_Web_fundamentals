@@ -1,0 +1,63 @@
+/* Flexbar */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: 1px solid pink; */
+}
+
+.center-box, .center-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box{
+    background-color: #190080;
+    padding: 100px 0px;
+    width: 900px;
+}
+
+.center-item{
+    background-color: #FAE4B6;
+    padding: 40px;
+}
+
+/* Dojo Heading */
+
+.left-nav, .right-nav, .nav, .nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.left-nav{
+    width: 275px;
+}
+
+.nav{
+    background-color: #6495ED;
+    color: white;
+    font: 'Montserrat';
+    width: 900px;
+}
+
+.nav img{
+    height: 50px;
+    padding: 10px 0px;
+}
+
+.right-nav{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav ul{
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.right-nav a{
+    text-decoration: none;
+    color: white;
+}
