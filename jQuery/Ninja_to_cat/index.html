@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja to Cat</title>
+    <link rel ="stylesheet" type = "text/css" href = "style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log("jQuery is loaded")
+            $('img').click(function(){
+                console.log('swap-img value is', $(this).attr('swap-img'));
+                $(this).attr('src', $(this).attr('swap-img'));
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src = 'img/ninja0.png' swap-img='img/cat0.png'>
+    <img src = 'img/ninja1.png' swap-img='img/cat1.png'>
+    <img src = 'img/ninja2.png' swap-img='img/cat2.png'>
+    <img src = 'img/ninja3.png' swap-img='img/cat3.png'>
+    <img src = 'img/ninja4.png' swap-img='img/cat4.png'>
+</body>
+</html>

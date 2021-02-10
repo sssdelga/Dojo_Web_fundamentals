@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappering Ninja</title>
+    <link rel="stylesheet" href="ninja.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log("jQuery loaded");
+            $('img').click(function(){
+                $(this).hide();
+            })
+            $('button').click(function(){
+                $('img').show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <h3>jQuery Disappering img</h3>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <img src = "jd_weirdo.JPEG" alt="weird dog" width=200px>
+    <button>Restore</button>
+</body>
+</html>

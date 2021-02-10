@@ -1,0 +1,28 @@
+p{
+    color: green;
+}
+
+.specialP{
+    color: blue;
+    background-color: pink;
+}
+
+#special{
+    color: purple;
+}
+
+input{
+    width: 500px;
+}
+
+#specialB{
+    background-color: aqua;
+    padding: 30px;
+    font-size: 20pt;
+}
+
+#specialB2{
+    background-color: yellow;
+    padding: 10px;
+    font-size: 14pt;
+}

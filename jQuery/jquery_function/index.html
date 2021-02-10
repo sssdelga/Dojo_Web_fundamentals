@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Function</title>
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel = "stylesheet" type="text/css" href="miniformat.css">
+    <script>
+        $(document).ready(function(){
+            console.log("jQuery is loaded");
+            $('button').click(function(){
+                console.log("func click loaded");
+                $(this).slideToggle("slow", function(){
+                    console.log("func slideToggle loaded");
+                });
+            });
+            $('#specialB').click(function(){
+                $(this).hide();
+                console.log("func hide loaded");
+            });
+            $('p').click(function(){
+                $('button').show();
+                console.log("func show loaded");
+                $(this).addClass('specialP');
+                console.log("func add Class loaded");
+            });
+            $('ul').click(function(){
+                $('ul').append("<li>Ed Sheeran</li>");
+                console.log("func append loaded");
+            });
+            $('h2').click(function(){
+                $('ul').slideDown();
+                console.log("func slideDown loaded");
+            });
+            $('h1').click(function(){
+                $('ul').slideUp();
+                console.log("func slideUp loaded");
+                $(this).before("Good morning!");
+                console.log("func before loaded");
+                $('p').after("Paragraph modification");
+                console.log("func after loaded");
+            });
+            $('#dogs h2').click(function(){
+                console.log("entered h2 dogs");
+                if ($('img').is('hidden') == false){
+                    $('img').fadeOut();
+                    console.log("func fadeOut loaded");
+                }
+                else {
+                    $('img').fadeIn();
+                    console.log("func fadeIn loaded");
+                };
+            });
+            $('img').click(function(){
+                $('#dogs h2').html("<h1>Lana and JD</h1>");
+                console.log("func html loaded");
+            });
+            $('span').click(function(){
+                $(this).text("It's magic! JK it's jQuery!");
+                console.log("func text loaded");
+            });
+            $('input').keyup(function(){
+                var input = $(this).val();
+                $('#special p').text(input);
+                console.log("func val loaded");
+            });
+            $('#specialB2').click(function(){
+                $(this).text($(this).attr("id"));
+                console.log("func attr loaded");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>This is a page of thoughts. Click the h1 tags to add a greeting before it and a subheader after the paragraphs!</h1>
+    <p>Click the paragraghs to show the hidden buttons and modify the styling!</p>
+    <button id="specialB">
+        Click here to hide this special button
+    </button>
+    <button id="specialB2">
+        Click here to show the id name of this button
+    </button>
+    <p><span>Click here to alter text</span>. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, eveniet. Voluptatum impedit cumque ab numquam libero, sit temporibus labore esse saepe tempora nihil velit enim ducimus quisquam, optio exercitationem quia!
+        Banana pancakes are delicious.
+    </p>
+    <div id = "special">
+        <input type="text" value="Type here to create a new paragraph with this value">
+        <p></p>
+    </div>
+    <p><span>Click here to alter text</span>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium tempora excepturi similique quasi maiores culpa nulla quaerat veritatis, qui nam necessitatibus, nisi aspernatur, rem debitis sapiente modi aliquid natus.
+        Target is a sanctuary.
+    </p>
+    <p><span>Click here to alter text</span>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla, veritatis rem saepe iusto reiciendis recusandae consequatur fugit! Dignissimos saepe delectus nemo, asperiores dolore magni odit ipsam a enim voluptate?
+        Michael Choi is cool.
+    </p>
+    <button>I love french toast</button>
+    <button>and eggs benedict</button> 
+    <button>and avocado toast.</button>
+    <button>Click the buttons to slide toggle!</button>
+    <h1>Click here to slide toggle hide musical artists.</h1>
+    <h2>Click here to slide toggle reveal some musical artists I like:</h2>
+    <ul>
+        <li>Beyonce</li>
+        <li>Cardi B</li>
+        <li>Jhene Aiko</li>
+        <li>Ariana Grande</li>
+        <li>Click to append another favorite artist to the list!</li>
+    </ul>
+    <div id="dogs">
+        <h2>Click this h2 tag to fade hide and reveal the best doggos!</h2>
+        <img src="puppers.JPEG" width= 400px;>
+        <p>Click the image to alter the html and reveal the best doggos names!</p>
+    </div>
+</body>
+</html>
